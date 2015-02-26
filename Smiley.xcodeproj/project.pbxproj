@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		176C96E91A9EC68B003FEA3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C96E81A9EC68B003FEA3D /* main.m */; };
 		176C96EC1A9EC68B003FEA3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C96EB1A9EC68B003FEA3D /* AppDelegate.m */; };
-		176C96EF1A9EC68B003FEA3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C96EE1A9EC68B003FEA3D /* ViewController.m */; };
-		176C96F21A9EC68B003FEA3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176C96F01A9EC68B003FEA3D /* Main.storyboard */; };
 		176C96F41A9EC68B003FEA3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176C96F31A9EC68B003FEA3D /* Images.xcassets */; };
 		176C96F71A9EC68B003FEA3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176C96F51A9EC68B003FEA3D /* LaunchScreen.xib */; };
 		176C97031A9EC68C003FEA3D /* SmileyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C97021A9EC68C003FEA3D /* SmileyTests.m */; };
+		176C97101A9EC705003FEA3D /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C970E1A9EC705003FEA3D /* CanvasViewController.m */; };
+		176C97111A9EC705003FEA3D /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176C970F1A9EC705003FEA3D /* CanvasViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		176C96E81A9EC68B003FEA3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		176C96EA1A9EC68B003FEA3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		176C96EB1A9EC68B003FEA3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		176C96ED1A9EC68B003FEA3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		176C96EE1A9EC68B003FEA3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		176C96F11A9EC68B003FEA3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176C96F31A9EC68B003FEA3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		176C96F61A9EC68B003FEA3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		176C96FC1A9EC68C003FEA3D /* SmileyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C97011A9EC68C003FEA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C97021A9EC68C003FEA3D /* SmileyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileyTests.m; sourceTree = "<group>"; };
+		176C970D1A9EC705003FEA3D /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		176C970E1A9EC705003FEA3D /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		176C970F1A9EC705003FEA3D /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,9 @@
 		176C96E51A9EC68B003FEA3D /* Smiley */ = {
 			isa = PBXGroup;
 			children = (
+				176C970C1A9EC6DA003FEA3D /* ViewController */,
 				176C96EA1A9EC68B003FEA3D /* AppDelegate.h */,
 				176C96EB1A9EC68B003FEA3D /* AppDelegate.m */,
-				176C96ED1A9EC68B003FEA3D /* ViewController.h */,
-				176C96EE1A9EC68B003FEA3D /* ViewController.m */,
-				176C96F01A9EC68B003FEA3D /* Main.storyboard */,
 				176C96F31A9EC68B003FEA3D /* Images.xcassets */,
 				176C96F51A9EC68B003FEA3D /* LaunchScreen.xib */,
 				176C96E61A9EC68B003FEA3D /* Supporting Files */,
@@ -117,6 +115,16 @@
 				176C97011A9EC68C003FEA3D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		176C970C1A9EC6DA003FEA3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				176C970D1A9EC705003FEA3D /* CanvasViewController.h */,
+				176C970E1A9EC705003FEA3D /* CanvasViewController.m */,
+				176C970F1A9EC705003FEA3D /* CanvasViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176C96F21A9EC68B003FEA3D /* Main.storyboard in Resources */,
+				176C97111A9EC705003FEA3D /* CanvasViewController.xib in Resources */,
 				176C96F71A9EC68B003FEA3D /* LaunchScreen.xib in Resources */,
 				176C96F41A9EC68B003FEA3D /* Images.xcassets in Resources */,
 			);
@@ -219,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176C96EF1A9EC68B003FEA3D /* ViewController.m in Sources */,
+				176C97101A9EC705003FEA3D /* CanvasViewController.m in Sources */,
 				176C96EC1A9EC68B003FEA3D /* AppDelegate.m in Sources */,
 				176C96E91A9EC68B003FEA3D /* main.m in Sources */,
 			);
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		176C96F01A9EC68B003FEA3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				176C96F11A9EC68B003FEA3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		176C96F51A9EC68B003FEA3D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
